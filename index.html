@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+<body>
+  <div class="board">
+    <div class="game-title">
+      <h1>ROCK</h1>
+      <h1>PAPER</h1>
+      <h1>SCISSORS</h1>
+    </div>
+    <div class="game-score">
+      <span>SCORE</span>
+      <h1 class="score" id="score">0</h1>
+    </div>
+  </div>
+  <main>
+    <div class="options">
+      <button class="btn-circle paper" value="paper" id="paper" title="Paper">
+        <span class="btn-wrapper">
+          <img src="images/icon-paper.svg" alt="paper">
+        </span>
+      </button>
+      <button class="btn-circle scissors" value="scissors" title="Scissors" id="scissors">
+        <span class="btn-wrapper">
+          <img src="images/icon-scissors.svg" alt="scissors">
+        </span>
+      </button>
+      <button class="btn-circle rock" title="Rock" value="rock" id="rock">
+        <span class="btn-wrapper">
+          <img src="images/icon-rock.svg" alt="rock">
+        </span>
+      </button>
+    </div>
+  </main>
+  <div class="pick">
+    <div class="player-pick">
+      <h2>YOU PICKED</h2>
+      <button class="btn-circle-big">
+        <div class="winner" id="player-winner"></div>
+        <span class="btn-wrapper">
+          <img src="images/icon-rock.svg" id="player-pick-img" alt="rock">
+        </span>
+      </button>
+    </div>
+    <div class="result">
+      <h1><span id="declare">YOU WIN</span></h1>
+      <button id="play-again">
+        <h3>PLAY AGAIN</h3>
+      </button>
+    </div>
+    <div class="computer-pick">
+      <h2>THE HOUSE PICKED</h2>
+      <button class="btn-circle-big">
+        <div class="winner" id="computer-winner"></div>
+        <span class="btn-wrapper">
+          <img src="images/icon-scissors.svg" id="computer-pick-img" alt="scissors">
+        </span>
+      </button>
+    </div>
+  </div>
+
+  <button class="rules-btn">RULES</button>
+  <div class="rules hide">
+    <div class="rules-card">
+      <div class="rules-header">
+        <h2>RULES</h2>
+        <span class="exit-rules">
+          <img src="images/icon-close.svg" alt="close">
+        </span>
+      </div>
+      <div class="rules-img">
+        <img src="images/image-rules.svg" alt="rules">
+      </div>
+    </div>
+  </div>
+  <div class="pulse"></div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="main.js"></script>
+</body>
+</html>
